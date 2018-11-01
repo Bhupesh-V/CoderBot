@@ -10,7 +10,7 @@ bot.onText(/\/start/, (msg) => {
 
 bot.sendMessage(msg.chat.id, "Welcome, Lets Start Learning How to Code !!", {
 "reply_markup": {
-    "keyboard": [["Start Learning", "List Commands"],   ["Keyboard"], ["I'm robot"]]
+    "keyboard": [["Start Learning", "List Commands"],   ["Contact Developer"], ["I'm Bot"]]
     }
 });
 
@@ -23,23 +23,35 @@ bot.onText(/\/learn/, (msg) => {
 
 	bot.on('message', (msg) => {
     
+    var bool = false
+    var learn_language
 	//Languages CoderBot can teach	
-  	var lang = ['c++', 'python', 'java', 'javascript', 'php', 'rails', 'perl', 'c'];
+  	var lang = ['python', 'c++', 'java', 'javascript', 'php', 'rails', 'perl', 'c'];
   		for(temp in lang){
-  			if(temp == msg.text.toString().toLowerCase()){
-  				bot.sendMessage(msg.chat.id, "Got it " + msg.from.first_name + "\nI' m sending you some resources");
+  			if(lang[temp] == msg.text.toString().toLowerCase()){
+  				bool = true
+  				learn_language = lang[temp]
   			}
+  		}
+  		if (bool==true){
+  			//acknowledging the request
+  			bot.sendMessage(msg.chat.id, "Got it " + msg.from.first_name + "\nI 'm Sending you some resources");
+  			if(learn_language == 'c++'){
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/cplusplus/\">Tutorials Point</a>",{parse_mode : "HTML"});
+  			}
+  		}
+  		else{
+  			  	//Replying with Sorry , if language does not exist in the 'lang' array
+  			bot.sendMessage(msg.chat.id, "Sorry , I do not have resources for that \n Try another Language ");
   		}	
-  	//Replying with Sorry , if language does not exist in the 'lang' array
-  		bot.sendMessage(msg.chat.id, "Sorry , I do not have resources for that language");
-		bot.sendMessage(msg.chat.id, "Try another Language ");
+
 	});
 
 });
 
 bot.on('message', (msg) => {
     
-  //anything
+  //anything https://t.me/Bhuups
   var Hi = "hi";
 	if (msg.text.toString().toLowerCase().indexOf(Hi) === 0) {
 		bot.sendMessage(msg.chat.id, "Hello  " + msg.from.first_name);
@@ -50,12 +62,20 @@ bot.on('message', (msg) => {
 		bot.sendMessage(msg.chat.id, "Come back Soon, Bye");
 	} 
      
-  var robot = "I'm robot";
+  var robot ="I'm Bot";
 	if (msg.text.indexOf(robot) === 0) {
     	bot.sendMessage(msg.chat.id, "Yes I'm robot but not in that way!");
 	}
   var robot = "Start Learning";
 	if (msg.text.indexOf(robot) === 0) {
     	bot.sendMessage(msg.chat.id, "Ok , tell me the Programming Language");
+	}
+  var robot = "Contact Developer";
+	if (msg.text.indexOf(robot) === 0) {
+    	bot.sendMessage(msg.chat.id, "<a href=\"https://t.me/Bhuups\">Bhupesh</a>",{parse_mode : "HTML"});
+	}
+  var robot = "List Commands";
+	if (msg.text.indexOf(robot) === 0) {
+    	bot.sendMessage(msg.chat.id, "1 . '/learn' - For Learning a Language");
 	}	
 });
