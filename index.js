@@ -4,13 +4,12 @@ const bot = new TelegramBot(token, {polling: true});
     
 bot.onText(/\/start/, (msg) => {
 
-bot.sendMessage(msg.chat.id, "Welcome, Lets Start Learning How to Code !!");
-bot.sendMessage(msg.chat.id, "Welcome", {
+bot.sendMessage(msg.chat.id, "Welcome, Lets Start Learning How to Code !!", {
 "reply_markup": {
     "keyboard": [["Start Learning", "List Commands"],   ["Keyboard"], ["I'm robot"]]
     }
 });
-    
+
 });
 
 bot.on('message', (msg) => {
@@ -29,5 +28,9 @@ bot.on('message', (msg) => {
   var robot = "I'm robot";
 	if (msg.text.indexOf(robot) === 0) {
     bot.sendMessage(msg.chat.id, "Yes I'm robot but not in that way!");
+	}
+  var robot = "Start Learning";
+	if (msg.text.indexOf(robot) === 0) {
+    bot.sendMessage(msg.chat.id, "Ok , tell me the Programming Language");
 	}
 });
