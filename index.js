@@ -27,10 +27,26 @@ bot.on('message', (msg) => {
      
   var robot = "I'm robot";
 	if (msg.text.indexOf(robot) === 0) {
-    bot.sendMessage(msg.chat.id, "Yes I'm robot but not in that way!");
+    	bot.sendMessage(msg.chat.id, "Yes I'm robot but not in that way!");
 	}
   var robot = "Start Learning";
 	if (msg.text.indexOf(robot) === 0) {
-    bot.sendMessage(msg.chat.id, "Ok , tell me the Programming Language");
+    	bot.sendMessage(msg.chat.id, "Ok , tell me the Programming Language");
 	}
+  var cpp = "C++"
+  	if (msg.text.indexOf(cpp) === 0) {
+  		bot.sendMessage(msg.chat.id, "Ok Lets Learn C++, I'm Sending you some Resources");
+  	}
+  var python = "Python"
+  	if (msg.text.indexOf(python) === 0) {
+  		bot.sendMessage(msg.chat.id, "Ok Lets Learn Python, I'm Sending you some Resources");
+  	}
+  var java = "java"
+  	if (msg.text.indexOf(java) === 0) {
+  		bot.sendMessage(msg.chat.id, "Ok Lets Learn Java, I'm Sending you some Resources");
+  	}
+  var jsme = "javascript"
+  	if (msg.text.indexOf(jsme) === 0) {
+  		bot.sendMessage(msg.chat.id, "Ok Lets Learn JavaScript, I'm Sending you some Resources");
+  	}				
 });
