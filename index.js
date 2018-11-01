@@ -12,6 +12,12 @@ bot.sendMessage(msg.chat.id, "Welcome, Lets Start Learning How to Code !!", {
 
 });
 
+bot.onText(/\/learn/, (msg) => {
+
+bot.sendMessage(msg.chat.id, "Learn Command");
+
+});
+
 bot.on('message', (msg) => {
     
   //anything
