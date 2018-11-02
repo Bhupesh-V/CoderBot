@@ -7,13 +7,13 @@ const bot = new TelegramBot(token, {polling: true});
 var lang = ['python', 'c++', 'java', 'javascript', 'php', 'rails', 'perl', 'c'];
 var bool = false
 var learn_language
-
+var did = "674414135"
 // '/start' command
 bot.onText(/\/start/, (msg) => {
 
 	bot.sendMessage(msg.chat.id, "Welcome, Lets Start Learning How to Code !!", {
 	"reply_markup": {
-    	"keyboard": [["List Commands"],   ["Contact Developer"], ["Love this Bot ❤️"]]
+    	"keyboard": [["List Commands"],   ["Contact Developer 👨🏽‍💻"], ["Love this Bot ❤️"]]
     	}
 	});
 
@@ -22,9 +22,7 @@ bot.onText(/\/start/, (msg) => {
 bot.onText(/\/lang/, (msg) => {
 	bot.sendMessage(msg.chat.id, "Available Languages\n");
 	for(i=0 ; i<lang.length;i++){
-		bot.sendMessage(msg.chat.id, "<em>" + lang[i].toUpperCase() + "</em>\n" ,{parse_mode : "HTML"} );
-		//bot.sendMessage(msg.chat.id,"<em>italic with em</em> \n " ,{parse_mode : "HTML"});
-  
+		bot.sendMessage(msg.chat.id, "✅ <em>" + lang[i].toUpperCase() + "</em>\n" ,{parse_mode : "HTML"});
 	}
 
 });
@@ -48,7 +46,7 @@ bot.onText(/\/learn/, (msg) => {
   		if (bool==true){
   			//acknowledging the request
   			bot.sendMessage(msg.chat.id, "Got it " + msg.from.first_name + "\nI 'm Sending you some resources");
-  			if(learn_language == 'c++'){
+  			if(learn_language == 'c++' || learn_language == 'cpp'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/cplusplus/\">Tutorials Point</a>",{parse_mode : "HTML"});
   			}
   		}
@@ -77,8 +75,9 @@ bot.on('message', (msg) => {
   var robot ="Love this Bot ❤️";
 	if (msg.text.indexOf(robot) === 0) {
     	bot.sendMessage(msg.chat.id, "Thanks 😊👍🏽 ");
+    	bot.sendMessage(did, "Someone Loves Your Bot with username @"+ msg.from.username)
 	}
-  var robot = "Contact Developer";
+  var robot = "Contact Developer 👨🏽‍💻";
 	if (msg.text.indexOf(robot) === 0) {
     	bot.sendMessage(msg.chat.id, "<a href=\"https://t.me/Bhuups\">Bhupesh</a>",{parse_mode : "HTML"});
 	}
