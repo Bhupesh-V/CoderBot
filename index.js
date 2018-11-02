@@ -14,9 +14,9 @@ var did = "674414135"
 // '/start' command
 bot.onText(/\/start/, (msg) => {
 
-	bot.sendMessage(msg.chat.id, "Welcome, Lets Start Learning How to Code !!", {
+	bot.sendMessage(msg.chat.id, "Welcome, Lets Start Learning to Code !!", {
 	"reply_markup": {
-    	"keyboard": [["List Commands"],   ["Contact Developer 👨🏽‍💻"], ["Love this Bot ❤️"]]
+    	"keyboard": [["List Commands"], ["Contact Developer 👨🏽‍💻"], ["Love this Bot ❤️"]]
     	}
 	});
 
@@ -71,13 +71,16 @@ bot.onText(/\/learn/, (msg) => {
   			}
   			if(learn_language == 'javascript'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.w3schools.com/js/default.asp\">W3 Schools</a>",{parse_mode : "HTML"});
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.javascript.com/try\">PluralSight</a>",{parse_mode : "HTML"});
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.geeksforgeeks.org/javascript-tutorial/\">geeksforgeeks</a>",{parse_mode : "HTML"});
   			}
   			if(learn_language == 'php'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.w3schools.com/php/\">W3 Schools</a>",{parse_mode : "HTML"});
-  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.php5-tutorial.com/\">W3 Schools</a>",{parse_mode : "HTML"});
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.php5-tutorial.com/\">php5-tutorial</a>",{parse_mode : "HTML"});
   			}
   			if(learn_language == 'rails'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/ruby-on-rails/\">Tutorials Point</a>",{parse_mode : "HTML"});
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://medium.freecodecamp.org/lets-create-an-intermediate-level-ruby-on-rails-application-d7c6e997c63f?gi=532ea1155e31\">freecodecamp</a>",{parse_mode : "HTML"});
   			}
   			if(learn_language == 'perl'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/perl/\">Tutorials Point</a>",{parse_mode : "HTML"});
@@ -89,6 +92,7 @@ bot.onText(/\/learn/, (msg) => {
   			}
   			if(learn_language == 'swift'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/swift/\">Tutorials Point</a>",{parse_mode : "HTML"});
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.w3schools.in/swift-tutorial/\">w3 schools</a>",{parse_mode : "HTML"});
   			}
 
   		}
@@ -125,6 +129,7 @@ bot.on('message', (msg) => {
 	}
   var robot = "List Commands";
 	if (msg.text.indexOf(robot) === 0) {
-    	bot.sendMessage(msg.chat.id, "1 . '/learn' - For Learning a Language\n");
+      bot.sendMessage(msg.chat.id, "All Commands \n\ 1 : type /learn and follow instructions\n 2 : type /lang to see all languages\n\
+3 : type /start to start interacting with bot\n 4 : type /help to see help ");
 	}	
 });
