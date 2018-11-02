@@ -4,7 +4,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const token = '773778864:AAGE4wBBkYfIXj2oxn5WWCwJ-lrQ1GrRLoE';
 const bot = new TelegramBot(token, {polling: true});
 
-var lang = ['python', 'c++', 'java', 'javascript', 'php', 'rails', 'perl', 'c'];
+var lang = ['python', 'c++', 'java', 'javascript', 'php', 'rails', 'perl', 'c', 'swift'];
 var bool = false
 var learn_language
 var did = "674414135"
@@ -43,12 +43,38 @@ bot.onText(/\/learn/, (msg) => {
   				learn_language = lang[temp]
   			}
   		}
+
   		if (bool==true){
   			//acknowledging the request
   			bot.sendMessage(msg.chat.id, "Got it " + msg.from.first_name + "\nI 'm Sending you some resources");
   			if(learn_language == 'c++' || learn_language == 'cpp'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/cplusplus/\">Tutorials Point</a>",{parse_mode : "HTML"});
   			}
+  			if(learn_language == 'python'){
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.w3schools.com/python/\">W3 Schools</a>",{parse_mode : "HTML"});
+  			}
+  			if(learn_language == 'java'){
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.w3schools.com/java/\">W3 Schools</a>",{parse_mode : "HTML"});
+  			}
+  			if(learn_language == 'javascript'){
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.w3schools.com/js/default.asp\">W3 Schools</a>",{parse_mode : "HTML"});
+  			}
+  			if(learn_language == 'php'){
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.w3schools.com/php/\">W3 Schools</a>",{parse_mode : "HTML"});
+  			}
+  			if(learn_language == 'rails'){
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/ruby-on-rails/\">Tutorials Point</a>",{parse_mode : "HTML"});
+  			}
+  			if(learn_language == 'perl'){
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/perl/\">Tutorials Point</a>",{parse_mode : "HTML"});
+  			}
+  			if(learn_language == 'c'){
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/cprogramming/\"Tutorials Point</a>",{parse_mode : "HTML"});
+  			}
+  			if(learn_language == 'swift'){
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/swift/\"Tutorials Point</a>",{parse_mode : "HTML"});
+  			}
+
   		}
   		else{
   			  	//Replying with Sorry , if language does not exist in the 'lang' array
