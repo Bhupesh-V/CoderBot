@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "Telegram Bot to learn Programming",
   "main": "index.js",
+  "license": "ISC",
+  "author": "Bhupesh",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+    "start": "node index.js"
+  },
   "dependencies": {
     "node-telegram-bot-api": "^0.30.0"
-  }
+  },
   "engines": {
-    "node": "10.6.0"
+    "node": "^10.6.0"
   }
-  "author": "Bhupesh",
-  "license": "ISC"
+  
 }
