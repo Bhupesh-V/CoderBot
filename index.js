@@ -11,6 +11,7 @@ var learn_language
 var did = "674414135"
 
 
+
 // '/start' command
 bot.onText(/\/start/, (msg) => {
 
@@ -60,14 +61,18 @@ bot.onText(/\/learn/, (msg) => {
   			if(learn_language == 'c++' || learn_language == 'cpp'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/cplusplus/\">Tutorials Point</a>",{parse_mode : "HTML"});
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.sololearn.com/Course/CPlusPlus/\">SoloLearn</a>",{parse_mode : "HTML"});
-  			}
+  			  bot.sendMessage(msg.chat.id, "<a href=\"https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb\">Youtube</a>",{parse_mode : "HTML"});
+          bot.sendMessage(msg.chat.id, "<a href=\"https://www.youtube.com/watch?v=vLnPwxZdW4Y\">Youtube</a>",{parse_mode : "HTML"});
+        }
   			if(learn_language == 'python'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.w3schools.com/python/\">W3 Schools</a>",{parse_mode : "HTML"});
   				bot.sendMessage(msg.chat.id, "<a href=\"https://developers.google.com/edu/python/\">Google Python Class</a>",{parse_mode : "HTML"});
+          bot.sendMessage(msg.chat.id, "<a href=\"https://pythonprogramming.net/python-fundamental-tutorials/\">Python Programming</a>",{parse_mode : "HTML"});
   			}
   			if(learn_language == 'java'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.w3schools.com/java/\">W3 Schools</a>",{parse_mode : "HTML"});
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.youtube.com/playlist?list=PLE7E8B7F4856C9B19\">Youtube</a>",{parse_mode : "HTML"});
+          bot.sendMessage(msg.chat.id, "<a href=\"https://www.youtube.com/watch?v=Hl-zzrqQoSE&list=PLFE2CE09D83EE3E28\">Youtube</a>",{parse_mode : "HTML"});
   			}
   			if(learn_language == 'javascript'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.w3schools.com/js/default.asp\">W3 Schools</a>",{parse_mode : "HTML"});
@@ -129,7 +134,6 @@ bot.on('message', (msg) => {
 	}
   var robot = "List Commands";
 	if (msg.text.indexOf(robot) === 0) {
-      bot.sendMessage(msg.chat.id, "All Commands \n\ 1 : type /learn and follow instructions\n 2 : type /lang to see all languages\n\
-3 : type /start to start interacting with bot\n 4 : type /help to see help ");
+      bot.sendMessage(msg.chat.id, "All Commands \n\ 1 : type /learn and follow instructions\n 2 : type /lang to see all languages\n\ 3 : type /start to start interacting with bot\n 4 : type /help to see help ");
 	}	
 });
