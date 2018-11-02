@@ -46,21 +46,25 @@ bot.onText(/\/learn/, (msg) => {
 
   		if (bool==true){
   			//acknowledging the request
-  			bot.sendMessage(msg.chat.id, "Got it " + msg.from.first_name + "\nI 'm Sending you some resources");
+  			bot.sendMessage(msg.chat.id, "Got it  " + msg.from.first_name + "\nI 'm Sending you some resources");
   			if(learn_language == 'c++' || learn_language == 'cpp'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/cplusplus/\">Tutorials Point</a>",{parse_mode : "HTML"});
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.sololearn.com/Course/CPlusPlus/\">SoloLearn</a>",{parse_mode : "HTML"});
   			}
   			if(learn_language == 'python'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.w3schools.com/python/\">W3 Schools</a>",{parse_mode : "HTML"});
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://developers.google.com/edu/python/\">Google Python Class</a>",{parse_mode : "HTML"});
   			}
   			if(learn_language == 'java'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.w3schools.com/java/\">W3 Schools</a>",{parse_mode : "HTML"});
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.youtube.com/playlist?list=PLE7E8B7F4856C9B19\">Youtube</a>",{parse_mode : "HTML"});
   			}
   			if(learn_language == 'javascript'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.w3schools.com/js/default.asp\">W3 Schools</a>",{parse_mode : "HTML"});
   			}
   			if(learn_language == 'php'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.w3schools.com/php/\">W3 Schools</a>",{parse_mode : "HTML"});
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.php5-tutorial.com/\">W3 Schools</a>",{parse_mode : "HTML"});
   			}
   			if(learn_language == 'rails'){
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/ruby-on-rails/\">Tutorials Point</a>",{parse_mode : "HTML"});
@@ -69,10 +73,12 @@ bot.onText(/\/learn/, (msg) => {
   				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/perl/\">Tutorials Point</a>",{parse_mode : "HTML"});
   			}
   			if(learn_language == 'c'){
-  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/cprogramming/\"Tutorials Point</a>",{parse_mode : "HTML"});
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/cprogramming/\">Tutorials Point</a>",{parse_mode : "HTML"});
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.geeksforgeeks.org/c-programming-language/\">geeksforgeeks</a>",{parse_mode : "HTML"});
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAKIXv8Yr6nhGJ9Vlcjyymq\">Youtube</a>",{parse_mode : "HTML"});
   			}
   			if(learn_language == 'swift'){
-  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/swift/\"Tutorials Point</a>",{parse_mode : "HTML"});
+  				bot.sendMessage(msg.chat.id, "<a href=\"https://www.tutorialspoint.com/swift/\">Tutorials Point</a>",{parse_mode : "HTML"});
   			}
 
   		}
