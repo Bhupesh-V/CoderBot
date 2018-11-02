@@ -1,5 +1,8 @@
 # CoderBot
-A Telegram Bot for Beginners to learn Programming.
+
+**A Telegram Bot for Beginners to learn Programming**
+
+## **Chat with [CoderBot](http://telegram.me/bhupesh_bot)**
 
 [![David](https://img.shields.io/david/expressjs/express.svg)](https://www.npmjs.com/package/telegram-bot-api)
 
@@ -22,6 +25,7 @@ cd CoderBot
 ```
 node index.js
 ```
+## Deployed on [Zeit](https://zeit.co/now)
 
 ## License
 The MIT License (MIT)
