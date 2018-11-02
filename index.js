@@ -3,16 +3,29 @@ const TelegramBot = require('node-telegram-bot-api');
 //Telegram Bot Token
 const token = '773778864:AAGE4wBBkYfIXj2oxn5WWCwJ-lrQ1GrRLoE';
 const bot = new TelegramBot(token, {polling: true});
-    
+
+var lang = ['python', 'c++', 'java', 'javascript', 'php', 'rails', 'perl', 'c'];
+var bool = false
+var learn_language
 
 // '/start' command
 bot.onText(/\/start/, (msg) => {
 
-bot.sendMessage(msg.chat.id, "Welcome, Lets Start Learning How to Code !!", {
-"reply_markup": {
-    "keyboard": [["Start Learning", "List Commands"],   ["Contact Developer"], ["I'm Bot"]]
-    }
+	bot.sendMessage(msg.chat.id, "Welcome, Lets Start Learning How to Code !!", {
+	"reply_markup": {
+    	"keyboard": [["List Commands"],   ["Contact Developer"], ["Love this Bot ❤️"]]
+    	}
+	});
+
 });
+
+bot.onText(/\/lang/, (msg) => {
+	bot.sendMessage(msg.chat.id, "Available Languages\n");
+	for(i=0 ; i<lang.length;i++){
+		bot.sendMessage(msg.chat.id, "<em>" + lang[i].toUpperCase() + "</em>\n" ,{parse_mode : "HTML"} );
+		//bot.sendMessage(msg.chat.id,"<em>italic with em</em> \n " ,{parse_mode : "HTML"});
+  
+	}
 
 });
 
@@ -23,10 +36,9 @@ bot.onText(/\/learn/, (msg) => {
 
 	bot.on('message', (msg) => {
     
-    var bool = false
-    var learn_language
+    
 	//Languages CoderBot can teach	
-  	var lang = ['python', 'c++', 'java', 'javascript', 'php', 'rails', 'perl', 'c'];
+  	
   		for(temp in lang){
   			if(lang[temp] == msg.text.toString().toLowerCase()){
   				bool = true
@@ -42,7 +54,7 @@ bot.onText(/\/learn/, (msg) => {
   		}
   		else{
   			  	//Replying with Sorry , if language does not exist in the 'lang' array
-  			bot.sendMessage(msg.chat.id, "Sorry , I do not have resources for that \n Try another Language ");
+  			//bot.sendMessage(msg.chat.id, "Sorry , I do not have resources for that \n Try another Language ");
   		}	
 
 	});
@@ -62,13 +74,9 @@ bot.on('message', (msg) => {
 		bot.sendMessage(msg.chat.id, "Come back Soon, Bye");
 	} 
      
-  var robot ="I'm Bot";
+  var robot ="Love this Bot ❤️";
 	if (msg.text.indexOf(robot) === 0) {
-    	bot.sendMessage(msg.chat.id, "Yes I'm robot but not in that way!");
-	}
-  var robot = "Start Learning";
-	if (msg.text.indexOf(robot) === 0) {
-    	bot.sendMessage(msg.chat.id, "Ok , tell me the Programming Language");
+    	bot.sendMessage(msg.chat.id, "Thanks 😊👍🏽 ");
 	}
   var robot = "Contact Developer";
 	if (msg.text.indexOf(robot) === 0) {
