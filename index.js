@@ -8,7 +8,7 @@ const bot = new TelegramBot(token, {polling: true});
 var lang = ['python', 'c++', 'java', 'javascript', 'php', 'rails', 'perl', 'c', 'swift'];
 var bool = false
 var learn_language
-var did = "674414135"
+var did = "<your-telegram-id>"
 
 
 
