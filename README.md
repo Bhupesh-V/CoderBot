@@ -11,11 +11,12 @@
 
 
 ## Requirements
-1. **telegram-bot-api** 
+1. **node-telegram-bot-api** 
 
     Use  ``` npm install --save node-telegram-bot-api ```  to install
     
     Or check the documentation [here](https://www.npmjs.com/package/telegram-bot-api) 
+    Github : [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api)
 ## Installation
 1. Clone the Repository
 ```
