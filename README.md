@@ -1,4 +1,5 @@
-<h1>CoderBot<sub><h6>beta</h6></sub></h1>
+<h1>CoderBot</h1>
+<sub>beta</sub>
 
 ## A Telegram Bot for Beginners to learn Programming
 
