@@ -1,6 +1,8 @@
-# CoderBot
+<h1>CoderBot<sub><h6>beta</h6></sub></h1>
 
-**A Telegram Bot for Beginners to learn Programming**
+## A Telegram Bot for Beginners to learn Programming
+
+<img src="https://github.com/Bhupesh-V/CoderBot/blob/master/Samples/coder_bot.jpg" alt="CoderBot" width="400" height="400" align="center">
 
 ## **Chat with [CoderBot](http://telegram.me/bhupesh_bot)**
 
