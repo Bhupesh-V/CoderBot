@@ -38,4 +38,4 @@ node index.js
 ## Deployed on [Zeit](https://zeit.co/now)
 
 ## License
-The MIT License (MIT)
+[MIT License (MIT)](https://github.com/Bhupesh-V/CoderBot/blob/master/LICENSE)
