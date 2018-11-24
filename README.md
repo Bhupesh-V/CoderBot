@@ -6,7 +6,7 @@
 <img src="https://github.com/Bhupesh-V/CoderBot/blob/master/Samples/coder_bot.jpg" alt="CoderBot" width="400" height="400" align="center">
 
 ## **Chat with [CoderBot](http://telegram.me/bhupesh_bot)**
-
+[![Build Status](https://travis-ci.org/Bhupesh-V/CoderBot.svg?branch=master)](https://travis-ci.org/Bhupesh-V/CoderBot)
 [![David](https://img.shields.io/david/expressjs/express.svg)](https://www.npmjs.com/package/telegram-bot-api)
 [![Bhupesh-Telegram](https://img.shields.io/badge/Telegram-Bhupesh%20Varshney-green.svg)](https://telegram.me/bhuups)
 [![Bot API](https://img.shields.io/badge/Bot%20API-v%204.0.0-blue.svg)](https://core.telegram.org/bots/api)
