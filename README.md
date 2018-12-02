@@ -10,6 +10,7 @@
 [![David](https://img.shields.io/david/expressjs/express.svg)](https://www.npmjs.com/package/telegram-bot-api)
 [![Bhupesh-Telegram](https://img.shields.io/badge/Telegram-Bhupesh%20Varshney-green.svg)](https://telegram.me/bhuups)
 [![Bot API](https://img.shields.io/badge/Bot%20API-v%204.0.0-blue.svg)](https://core.telegram.org/bots/api)
+[![CodeFactor](https://www.codefactor.io/repository/github/bhupesh-v/coderbot/badge)](https://www.codefactor.io/repository/github/bhupesh-v/coderbot)
 
 ## Sample Chats
 <img src="https://github.com/Bhupesh-V/CoderBot/blob/master/Samples/sample1.png" alt="alt text" width="210" height="400"> <img src="https://github.com/Bhupesh-V/CoderBot/blob/master/Samples/sample2.png" alt="alt text" width="210" height="400"> <img src="https://github.com/Bhupesh-V/CoderBot/blob/master/Samples/sample3.png" alt="alt text" width="210" height="400"> <img src="https://github.com/Bhupesh-V/CoderBot/blob/master/Samples/sample4.png" alt="alt text" width="210" height="400">
