@@ -40,3 +40,6 @@ node index.js
 
 ## License
 [MIT License (MIT)](https://github.com/Bhupesh-V/CoderBot/blob/master/LICENSE)
+
+## Contributing
+See [CONTRIBUTING](CONTRIBUTING.md) file for contributing.
