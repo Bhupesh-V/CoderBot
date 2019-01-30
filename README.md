@@ -6,6 +6,9 @@
 <img src="https://github.com/Bhupesh-V/CoderBot/blob/master/Samples/coder_bot.jpg" alt="CoderBot" width="400" height="400" align="center">
 
 ## **Chat with [CoderBot](http://telegram.me/bhupesh_bot)**
+*The Bot is currently undeployed due to some bugs.
+Will be Live Soon*
+
 [![Build Status](https://travis-ci.org/Bhupesh-V/CoderBot.svg?branch=master)](https://travis-ci.org/Bhupesh-V/CoderBot)
 [![David](https://img.shields.io/david/expressjs/express.svg)](https://www.npmjs.com/package/telegram-bot-api)
 [![Bhupesh-Telegram](https://img.shields.io/badge/Telegram-Bhupesh%20Varshney-green.svg)](https://telegram.me/bhuups)
