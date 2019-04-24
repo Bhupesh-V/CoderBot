@@ -31,7 +31,8 @@ Will be Live Soon*
 ```
  git clone https://github.com/Bhupesh-V/CoderBot.git
 ```
-2. Change working directory
+2. Change working directorynotifications
+
 ```
 cd CoderBot
 ```
@@ -39,7 +40,7 @@ cd CoderBot
 ```
 node index.js
 ```
-## Deployed on [Zeit](https://zeit.co/now)
+## Deployed on [Heroku](https://www.heroku.com/)
 
 ## License
 [MIT License (MIT)](https://github.com/Bhupesh-V/CoderBot/blob/master/LICENSE)
